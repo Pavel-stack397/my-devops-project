@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 
 # Простое "хранилище" задач в памяти
-tasks = [{"id": 1, "title": "Изучить Docker"}, {"id": 2, "title": "Настроить CI/CD"}]
+tasks = [{"id": 1, "title": "Изучить Docker"}, {"id": 2, "title": "Настроить CI/CD"}, {"id": 3, "title": "Проверить авто-деплой"}]
 
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
